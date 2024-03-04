@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+
+header > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 5px;
+    padding-bottom: 1vh;
+    cursor: default;
+}
+
+nav li {
+    display: inline-block;
+    width: 20vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    border-radius: 2px;
+}
+
+nav li:hover {
+    cursor: pointer;
+    background-color: #f0f0f0;
+    transition: 350ms;
+    cursor: pointer;
+}
+
+nav li a {
+    color: black;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+h1, .column-1 {
+    font-size: 2rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 500;
+}
+
+p, .column-2 {
+    font-size: 1rem;
+}
+
+.column-2 {
+    padding: 1vw 0vw 1vw 2vw;
+}
+
+main {
+    min-height: 60vh;
+}
+
+section {
+    display: flex;
+}
+
+article {
+    flex: 1;
+    cursor: default;
+}
+
+.main-article, .sub-article {
+    position: relative;
+}
+
+.main-article div {
+    color: #ebebeb;
+    position: absolute;
+    bottom: 10%;
+    left: 3%;
+    padding: 1vw;
+}
+
+.main-article div:hover {
+    cursor: pointer;
+    background-color: #ebebeb;
+    color: black;
+    transition: 350ms;
+    border-radius: 2px;
+}
+
+.sub-article div {
+    background-color: #ebebeb;
+    padding: 5px;
+    position: absolute;
+    bottom: 4%;
+    left: 3%;
+    right: 3%;
+    padding: 1vw;
+    border-radius: 2px;
+}
+
+.sub-article div:hover {
+    background-color: white;
+    transition: 350ms;
+    cursor: pointer;
+}
+
+.sub-article div p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.product-article {
+    display: flex;
+    align-items: center;
+    margin: 0% 25% 0% 25%;
+    padding: 1vh 0vh 1vh 0vh;
+    border-top: 1px solid #b4b4b4;
+}
+
+.product-article p, .product-article h1 {
+    margin-left: 1vw;
+}
+
+table {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+table:hover {
+    cursor: default;
+}
+
+.about-article {
+    display: flex;
+    flex-direction: column;
+    margin: 5% 25% 0% 25%;
+}
+
+.about-article h1 {
+    margin-bottom: 5vh;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    color: white;
+    height: 30vh;
+    cursor: default;
+}
+
+footer div {
+    flex: 1;
+    margin-left: 5%;
+    margin-right: 5%;
+}
