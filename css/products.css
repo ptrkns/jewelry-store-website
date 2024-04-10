@@ -1,0 +1,13 @@
+/* Products */
+
+.product-article {
+    display: flex;
+    align-items: center;
+    margin: 0% 25% 0% 25%;
+    padding: 1vh 0vh 1vh 0vh;
+    border-top: 1px solid #b4b4b4;
+}
+
+.product-article p, .product-article h1 {
+    margin-left: 1vw;
+}
