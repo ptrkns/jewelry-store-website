@@ -1,110 +1,78 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: lighter;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-header > img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 3vh;
-    padding-bottom: 3vh;
+/* Header */
+
+header {
+    min-width: 310px;
+    margin-top: 1vh;
+    border-bottom: 1px solid lightgray;
 }
 
-nav ul {
-    list-style: none;
-    text-align: center;
-    font-size: 2em;
-    margin-bottom: 5px;
-    padding-bottom: 1vh;
-    cursor: default;
+@media(max-width: 700px){
+    header div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0vh 1vw;
+    }
+
+    nav ul {
+        list-style: none;
+        text-align: center;
+        font-weight: 400;
+        font-size: 1em;
+        cursor: default;
+    }
+}
+
+@media(min-width: 701px) {
+    header div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0vh 1vw;
+    }
+
+    nav ul {
+        list-style: none;
+        text-align: center;
+        font-weight: 400;
+        font-size: 1.2em;
+        cursor: default;
+    }
+}
+
+header div img {
+    height: 25px;
 }
 
 nav li {
     display: inline-block;
-    width: 20vw;
-    padding-top: 1vh;
-    padding-bottom: 1vh;
-    border-radius: 2px;
+    margin: 0vw 1vw;
+    padding: 2vh 0vh;
+    border-bottom: 3px solid white;
 }
 
 nav li:hover {
     cursor: pointer;
-    background-color: #f0f0f0;
-    transition: 350ms;
-    cursor: pointer;
+    border-bottom: 3px solid black;
 }
 
 nav li a {
     color: black;
-    font-size: 2rem;
     text-decoration: none;
 }
 
-h1, .column-1 {
-    font-size: 2rem;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    font-weight: 500;
-}
-
-p, .column-2 {
-    font-size: 1rem;
-}
-
-.column-2 {
-    padding: 1vw 0vw 1vw 2vw;
-}
+/* Main */
 
 main {
     min-height: 60vh;
-}
-
-section {
-    display: flex;
-}
-
-article {
-    flex: 1;
-    cursor: default;
-}
-
-.main-article, .sub-article {
-    position: relative;
-}
-
-.main-article div {
-    color: #ebebeb;
-    position: absolute;
-    bottom: 10%;
-    left: 3%;
-    padding: 1vw;
-}
-
-.main-article div:hover {
-    cursor: pointer;
-    background-color: #ebebeb;
-    color: black;
-    transition: 350ms;
-    border-radius: 2px;
-}
-
-.sub-article div {
-    background-color: #ebebeb;
-    padding: 5px;
-    position: absolute;
-    bottom: 4%;
-    left: 3%;
-    right: 3%;
-    padding: 1vw;
-    border-radius: 2px;
-}
-
-.sub-article div:hover {
-    background-color: white;
-    transition: 350ms;
-    cursor: pointer;
+    margin-bottom: 3vh;
 }
 
 .sub-article div p {
@@ -112,6 +80,8 @@ article {
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+/* Products */
 
 .product-article {
     display: flex;
@@ -125,15 +95,20 @@ article {
     margin-left: 1vw;
 }
 
+/* Contact */
+
 table {
     display: flex;
     justify-content: center;
     margin-top: 5%;
 }
+
 table:hover {
     cursor: default;
 }
 
+
+/* About */
 .about-article {
     display: flex;
     flex-direction: column;
@@ -144,17 +119,39 @@ table:hover {
     margin-bottom: 5vh;
 }
 
+/* Footer */
+
 footer {
-    display: flex;
+    min-width: 310px;
+    height: 35vh;
     align-items: center;
-    background-color: black;
+    background: black;
     color: white;
-    height: 30vh;
     cursor: default;
 }
 
 footer div {
-    flex: 1;
-    margin-left: 5%;
-    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+}
+
+footer div img {
+    height: 10vh;
+}
+
+footer div p {
+    margin-top: 1vh;
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+/* Styles */
+
+h1, .column-1 {
+    font-size: 2em;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 500;
 }
