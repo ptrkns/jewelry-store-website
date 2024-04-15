@@ -1,13 +1,95 @@
+@import './header.css';
+@import './footer.css';
+@import './styles.css';
+
 /* Products */
 
-.product-article {
-    display: flex;
-    align-items: center;
-    margin: 0% 25% 0% 25%;
-    padding: 1vh 0vh 1vh 0vh;
-    border-top: 1px solid #b4b4b4;
+@media (max-width: 700px) {
+    article {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 1vh 0vh;
+    }
+
+    article h1 {
+        margin: 1vh 5vw;
+    }
 }
 
-.product-article p, .product-article h1 {
-    margin-left: 1vw;
+@media (min-width: 701px) {
+    article {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0vh 10vw;
+        padding: 1vh 0vw;
+        cursor: default;
+    }
+
+    .product-card:hover {
+        cursor: pointer;
+        border-color: var(--dark-gray);
+        transition: 350ms;
+    }
+}
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    padding: 2vh 0vw;
+    overflow-x: auto;
+}
+
+.product-card {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    margin: 0vh 1vw;
+    transition: 350ms;
+}
+
+#card-text {
+    font-weight: bold;
+}
+
+#card-image {
+    border-radius: 5px 5px 0px 0px;
+    height: 200px;
+    width: 200px;
+}
+
+#card-first-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0vh 0vw 0vh 1vw;
+}
+
+#card-second-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0vh 1vw;
+    padding: 0vh 1vw 1vh 1vw;
+}
+
+#card-badge, #card-badge-sale, #card-badge-new {
+    color: white;
+    padding: 1px 2px;
+}
+
+#card-badge-sale {
+    background-color: red;
+}
+
+#card-badge-new {
+    background-color: var(--gold);
+}
+
+#card-price-before {
+    text-decoration: line-through;
+    color: lightgray;
+    margin-right: 3px;
 }
