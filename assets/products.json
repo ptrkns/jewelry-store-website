@@ -1,98 +1,106 @@
 [
     {
         "id":"1",
+        "name":"ER-01",
         "type":"earring",
-        "material":"silver",
         "price":"35",
         "year":"2022",
         "image":"../assets/earrings-1.jpg"
     },
     {
         "id":"2",
+        "name":"ER-02",
         "type":"earring",
-        "material":"silver",
         "price":"50",
         "year":"2023",
         "image":"../assets/earrings-2.jpg"
     },
     {
         "id":"3",
+        "name":"ER-03",
         "type":"earring",
-        "material":"miscellaneous",
         "price":"25",
         "year":"2022",
         "image":"../assets/earrings-3.jpg"
     },
     {
         "id":"4",
+        "name":"ER-04",
         "type":"earring",
-        "material":"gold",
         "price":"50",
         "year":"2024",
         "image":"../assets/earrings-4.jpg"
     },
     {
         "id":"5",
+        "name":"NL-01",
         "type":"necklace",
-        "material":"gold",
         "price":"53",
-        "year":"2024",
+        "year":"2021",
         "image":"../assets/necklace-1.jpg"
     },
     {
         "id":"6",
+        "name":"NL-02",
         "type":"necklace",
-        "material":"gold",
         "price":"60",
         "year":"2022",
         "image":"../assets/necklace-2.jpg"
     },
     {
         "id":"7",
+        "name":"NL-03",
         "type":"necklace",
-        "material":"silver",
         "price":"20",
         "year":"2023",
         "image":"../assets/necklace-3.jpg"
     },
     {
         "id":"8",
+        "name":"NL-04",
         "type":"necklace",
-        "material":"gold",
         "price":"40",
         "year":"2023",
         "image":"../assets/necklace-4.jpg"
     },
     {
         "id":"9",
+        "name":"R-01",
         "type":"ring",
-        "material":"silver",
         "price":"35",
         "year":"2023",
         "image":"../assets/ring-1.jpg"
     },
     {
         "id":"10",
+        "name":"R-02",
         "type":"ring",
-        "material":"silver",
         "price":"40",
         "year":"2024",
         "image":"../assets/ring-2.jpg"
     },
     {
         "id":"11",
+        "name":"R-03",
         "type":"ring",
-        "material":"gold",
         "price":"25",
         "year":"2022",
         "image":"../assets/ring-3.jpg"
     },
     {
         "id":"12",
+        "name":"R-04",
         "type":"ring",
-        "material":"gold",
         "price":"25",
-        "year":"2023",
+        "year":"2021",
         "image":"../assets/ring-4.jpg"
+    },
+    {
+        "id":"12",
+        "name":"BL-04",
+        "type":"bracelet",
+        "price":"20",
+        "year":"2024",
+        "image":"../assets/bracelet-1.jpg"
     }
 ]
