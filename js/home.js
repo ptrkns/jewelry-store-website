@@ -1,15 +1,64 @@
 import { getProducts } from "./productData.js";
 
-const mainTitle = "New in store"
-const mainDesc = "The new jewlery collection is now available!"
-let mainImageIndex = 0;
-let products = getProducts();
+const products = getProducts();
+const buttonNew = document.getElementById('button-new');
+const buttonSale = document.getElementById('button-sale');
 
-function setMainArticle(index, title, desc) {
-    document.getElementById('ma-img-1').src = products[index].image;
-    document.getElementById('ma-title').textContent = title;
-    document.getElementById('ma-description').textContent = desc;
-    mainImageIndex = index;
+/* Buttons */
+
+buttonNew.addEventListener('click', (event) => {
+    event.preventDefault();
+    window.location.href = './products.html';
+});
+
+buttonSale.addEventListener('click', (event) => {
+    event.preventDefault();
+    window.location.href = './products.html';
+});
+
+/* Main image */
+
+let mainCounter = 0;
+
+function cycleMainImage() {
+    const filteredProducts = products.filter(p => p.year === '2024');
+    var length = filteredProducts.length;
+    var delayInSeconds = 5;
+    var imageContainer = document.getElementById('ma-img-1');
+    var mainImage = () => {
+        imageContainer.style.opacity = '0';
+        setTimeout(() => {
+            imageContainer.setAttribute('src', filteredProducts[mainCounter].image);
+            imageContainer.style.opacity = '1';
+        }, 400);
+
+        mainCounter = (mainCounter + 1) % length;
+    }
+    mainImage();
+    setInterval(mainImage, delayInSeconds * 1000);
 }
+cycleMainImage();
 
-setMainArticle(4, mainTitle, mainDesc);
+/* Sub article 1 */
+
+let subCounter = 0;
+
+function setSubImages() {
+    const filteredProducts = products.filter(p => p.year < '2023');
+    var length = filteredProducts.length;
+    var delayInSeconds = 5;
+    var subArticleImage = document.getElementById('sub-article-image');
+
+    var subImage = () => {
+        subArticleImage.style.opacity = '0';
+        setTimeout(() => {
+            subArticleImage.setAttribute('src', filteredProducts[subCounter].image);
+            subArticleImage.style.opacity = '1';
+        }, 400);
+
+        subCounter = (subCounter + 1) % length;
+    }
+    subImage();
+    setInterval(subImage, delayInSeconds * 1000);
+}
+setSubImages();
