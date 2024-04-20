@@ -1,4 +1,14 @@
 import { getProducts } from "./productData.js";
+import { headerInit } from "./header.js";
+import { footerInit } from "./footer.js";
+
+/* Header, footer */
+
+headerInit();
+footerInit();
+
+/* Product cards */
+
 let products = getProducts();
 
 function renderCards(type) {

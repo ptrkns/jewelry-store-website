@@ -1,8 +1,15 @@
 import { getProducts } from "./productData.js";
+import { headerInit } from "./header.js";
+import { footerInit } from "./footer.js";
 
 const products = getProducts();
 const buttonNew = document.getElementById('button-new');
 const buttonSale = document.getElementById('button-sale');
+
+/* Header, footer */
+
+headerInit();
+footerInit();
 
 /* Buttons */
 

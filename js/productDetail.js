@@ -1,4 +1,14 @@
 import { getProducts } from "./productData.js";
+import { headerInit } from "./header.js";
+import { footerInit } from "./footer.js";
+
+/* Header, footer */
+
+headerInit();
+footerInit();
+
+/* Body */
+
 const loremIpsum = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.';
 let products = getProducts();
 const urlParams = new URLSearchParams(window.location.search);
