@@ -24,14 +24,6 @@
         "image":"../assets/earrings-3.jpg"
     },
     {
-        "id":"4",
-        "name":"ER-04",
-        "type":"earring",
-        "price":"50",
-        "year":"2024",
-        "image":"../assets/earrings-4.jpg"
-    },
-    {
         "id":"5",
         "name":"NL-01",
         "type":"necklace",
@@ -62,14 +54,6 @@
         "price":"40",
         "year":"2023",
         "image":"../assets/necklace-4.jpg"
-    },
-    {
-        "id":"9",
-        "name":"R-01",
-        "type":"ring",
-        "price":"35",
-        "year":"2023",
-        "image":"../assets/ring-1.jpg"
     },
     {
         "id":"10",
