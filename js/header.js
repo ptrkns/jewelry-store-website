@@ -2,7 +2,7 @@ function createHeader() {
     var header = document.createElement('header');
     header.innerHTML = `
         <div>
-            <img src="../assets/logo-1.png" >
+            <a href="home.html"><img src="../assets/logo-1.png" ></a>
             <nav>
                 <ul>
                     <li><a href="home.html">Home</a></li>
