@@ -1,2 +1,2 @@
 # Jewelry store website
-A portfolio project for practicing CSS, HTML and JavaScript.
+A portfolio project for practicing Tailwind CSS, HTML and TypeScript.
